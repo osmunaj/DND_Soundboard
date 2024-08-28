@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            DND Soundboard
+        </title>
+        <link rel="stylesheet" href="soundboard.css">
+    </head>
+    <body>
+        <h1>
+            DND Soundboard
+        </h1>
+        <!-- 
+            Songs:
+                boneFields
+                bubbleTea
+            Sound Effects:
+                High pitch 1
+                Sweep 1
+        -->
+        <h3>Music</h3>
+        <div class="box">
+            <h4>Intro Music</h4>
+            <input id="everything" type="button" value="▷/❚❚" onclick="playAudio(everythingIIRP); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(everythingIIRP);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(everythingIIRP); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(everythingIIRP, value);">
+        </div>
+
+        <div class="box">
+            <h4>Bubble Tea</h4>
+            <input id="bubbleTeaButton" type="button" value="▷/❚❚" class = "inactive" onclick="playAudio(bubbleTea); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(bubbleTea); " />
+            <input id="button3" type="button" value="↻" class = "inactive" onclick="loopAudio(bubbleTea); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(bubbleTea, value);">
+        </div>
+        
+        <div class="box">
+            <h4>Bone Fields</h4>
+            <input id="boneFields" type="button" value="▷/❚❚" onclick="playAudio(boneFields); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(boneFields);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(boneFields); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(boneFields, value);">
+        </div>
+
+        <div class="box">
+            <h4>What are you (eerie)</h4>
+            <input id="arrowImpact" type="button" value="▷/❚❚" onclick="playAudio(whatAreYou); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(whatAreYou);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(whatAreYou); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(whatAreYou, value);">
+        </div>
+
+        <div class="box">
+            <h4>Wrong Place</h4>
+            <input id="wrongPlace" type="button" value="▷/❚❚" onclick="playAudio(wrongPlace); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(wrongPlace);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(wrongPlace); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(wrongPlace, value);">
+        </div>
+
+        <div class="box">
+            <h4>Sea Adventure</h4>
+            <input id="boneFields" type="button" value="▷/❚❚" onclick="playAudio(seaAdventure); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(seaAdventure);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(seaAdventure); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(seaAdventure, value);">
+        </div>
+
+
+       
+        <h3>Background & Ambience</h3>
+        <div class="box">
+            <h4>Peaceful</h4>
+            <input id="wrongPlace" type="button" value="▷/❚❚" onclick="playAudio(peaceful); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(peaceful);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(peaceful); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(peaceful, value);">
+        </div>
+
+        <div class="box">
+            <h4>Rain</h4>
+            <input id="rain" type="button" value="▷/❚❚" onclick="playAudio(rain); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(rain);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(rain); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(rain, value);">
+        </div>
+
+        <div class="box">
+            <h4>Rain & Thunder</h4>
+            <input id="rainThunder" type="button" value="▷/❚❚" onclick="playAudio(rainThunder); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(rainThunder);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(rainThunder); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(rainThunder, value);">
+        </div>
+
+        <div class="box">
+            <h4>Forgotten Cave</h4>
+            <input id="forgottenCave" type="button" value="▷/❚❚" onclick="playAudio(forgottenCave); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(forgottenCave);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(forgottenCave); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(forgottenCave, value);">
+        </div>
+
+        <h3>Sound Effects</h3>
+        <div class="box">
+            <h4>High Pitch 1</h4>
+            <input id="highPitch1" type="button" value="▷/❚❚" onclick="playAudio(highPitch1); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(highPitch1);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(highPitch1); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(highPitch1, value);">
+        </div>
+        <div class="box">
+            <h4>High Pitch 2</h4>
+            <input id="highPitch2" type="button" value="▷/❚❚" onclick="playAudio(highPitch2); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(highPitch2);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(highPitch2); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(highPitch2, value);">
+        </div>
+        <div class="box">
+            <h4>Sweep 1</h4>
+            <input id="sweep1" type="button" value="▷/❚❚" onclick="playAudio(sweep1); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(sweep1);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(sweep1); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(sweep1, value);">
+        </div>
+        <div class="box">
+            <h4>Womp Womp</h4>
+            <input id="wompWomp" type="button" value="▷/❚❚" onclick="playAudio(wompWomp); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(wompWomp);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(wompWomp); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(wompWomp, value);">
+        </div>
+        
+
+        <h3>Combat Effects</h3>
+        <div class="box">
+            <h4>Arrow Impact</h4>
+            <input id="arrowImpact" type="button" value="▷/❚❚" onclick="playAudio(arrowImpact); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(arrowImpact);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(arrowImpact); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(arrowImpact, value);">
+        </div>
+        <div class="box">
+            <h4>Sword 1</h4>
+            <input id="sword1" type="button" value="▷/❚❚" onclick="playAudio(sword1); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(sword1);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(sword1); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(sword1, value);">
+        </div>
+        <div class="box">
+            <h4>Magic Spell</h4>
+            <input id="magicSpell" type="button" value="▷/❚❚" onclick="playAudio(magicSpell); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(magicSpell);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(magicSpell); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(magicSpell, value);">
+        </div>
+        <div class="box">
+            <h4>Explosion</h4>
+            <input id="explosion" type="button" value="▷/❚❚" onclick="playAudio(explosion); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(explosion);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(explosion); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(explosion, value);">
+        </div>
+
+        <!-- <input id="button1" type="button" value="Play" onclick="playAudio2();" />
+        <input id="button2" type="button" value="Pause" onclick="pauseAudio2();" />
+        <input id="button2" type="button" value="Restart" onclick="restartAudio2();" /> -->
+        
+        <script src="soundboard.js"></script>
+    </body>
+</html>
