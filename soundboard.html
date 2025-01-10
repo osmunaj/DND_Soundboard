@@ -74,12 +74,41 @@
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(seaAdventure, value);">
         </div>
 
+        <h3>
+            Druid Stuff
+        </h3>
 
+        <div class="box">
+            <h4>Druids Marching</h4>
+            <input id="druidHorn" type="button" value="▷/❚❚" onclick="playAudio(druidHorn); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(druidHorn);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(druidHorn); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(druidHorn, value);">
+        </div>
+
+        <div class="box">
+            <h4>Forest Ambiance</h4>
+            <input id="forestAmbiance" type="button" value="▷/❚❚" onclick="playAudio(forestAmbiance); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(forestAmbiance);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(forestAmbiance); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(forestAmbiance, value);">
+        </div>
+
+        <div class="box">
+            <h4>Mystery</h4>
+            <input id="mystery" type="button" value="▷/❚❚" onclick="playAudio(mystery); changeColor(event)" />
+            <input id="button2" type="button" value="↩" onclick="restartAudio(mystery);" />
+            <input id="button3" type="button" value="↻" onclick="loopAudio(mystery); changeColor(event)" />
+            <br>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(mystery, value);">
+        </div>
        
         <h3>Background & Ambience</h3>
         <div class="box">
             <h4>Peaceful</h4>
-            <input id="wrongPlace" type="button" value="▷/❚❚" onclick="playAudio(peaceful); changeColor(event)" />
+            <input id="peaceful" type="button" value="▷/❚❚" onclick="playAudio(peaceful); changeColor(event)" />
             <input id="button2" type="button" value="↩" onclick="restartAudio(peaceful);" />
             <input id="button3" type="button" value="↻" onclick="loopAudio(peaceful); changeColor(event)" />
             <br>
@@ -112,6 +141,8 @@
             <br>
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onclick = "changeVolume(forgottenCave, value);">
         </div>
+
+        
 
         <h3>Sound Effects</h3>
         <div class="box">

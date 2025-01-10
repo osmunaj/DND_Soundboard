@@ -24,6 +24,9 @@ var magicSpell = new Audio('MagicSpell.mp3');
 var whatAreYou = new Audio('whatAreYou.mp3');
 var seaAdventure = new Audio('SeaAdventure.mp3');
 var peaceful = new Audio('Peaceful.mp3');
+var druidHorn = new Audio('DruidHorn.mp3');
+var forestAmbiance = new Audio('ForestAmbiance.mp3');
+var mystery = new Audio('Mystery.mp3');
 
 
 let audioDictionary = new Map();
@@ -46,7 +49,9 @@ audioDictionary.set(magicSpell, "magicSpell");
 audioDictionary.set(whatAreYou, "whatAreYou");
 audioDictionary.set(seaAdventure, "seaAdventure");
 audioDictionary.set(peaceful, "peaceful");
-
+audioDictionary.set(druidHorn, "druidHorn");
+audioDictionary.set(mystery, "mystery");
+audioDictionary.set(forestAmbiance, "forestAmbiance")
 
 
 
